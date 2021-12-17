@@ -13,6 +13,7 @@
 		112751E1276CED8F0094FF22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112751DF276CED8F0094FF22 /* Main.storyboard */; };
 		112751E3276CED910094FF22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 112751E2276CED910094FF22 /* Assets.xcassets */; };
 		112751E6276CED910094FF22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112751E4276CED910094FF22 /* LaunchScreen.storyboard */; };
+		3ACDF0C39F050F9C8FDD43CC /* Pods_JWPBrandNewBitcodeProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 278F0E3CD8ABEDC928DB42B0 /* Pods_JWPBrandNewBitcodeProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		112751E2276CED910094FF22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		112751E5276CED910094FF22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		112751E7276CED910094FF22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		278F0E3CD8ABEDC928DB42B0 /* Pods_JWPBrandNewBitcodeProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JWPBrandNewBitcodeProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97EF2942CB5BD928C5D1625F /* Pods-JWPBrandNewBitcodeProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWPBrandNewBitcodeProject.release.xcconfig"; path = "Target Support Files/Pods-JWPBrandNewBitcodeProject/Pods-JWPBrandNewBitcodeProject.release.xcconfig"; sourceTree = "<group>"; };
+		CEF33D0722F9DD840BCB5335 /* Pods-JWPBrandNewBitcodeProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWPBrandNewBitcodeProject.debug.xcconfig"; path = "Target Support Files/Pods-JWPBrandNewBitcodeProject/Pods-JWPBrandNewBitcodeProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ACDF0C39F050F9C8FDD43CC /* Pods_JWPBrandNewBitcodeProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				112751D8276CED8F0094FF22 /* JWPBrandNewBitcodeProject */,
 				112751D7276CED8F0094FF22 /* Products */,
+				7F3836FACA84226A09AB2ECE /* Pods */,
+				6027C6DF93CEC69F014ECE01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = JWPBrandNewBitcodeProject;
 			sourceTree = "<group>";
 		};
+		6027C6DF93CEC69F014ECE01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				278F0E3CD8ABEDC928DB42B0 /* Pods_JWPBrandNewBitcodeProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F3836FACA84226A09AB2ECE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEF33D0722F9DD840BCB5335 /* Pods-JWPBrandNewBitcodeProject.debug.xcconfig */,
+				97EF2942CB5BD928C5D1625F /* Pods-JWPBrandNewBitcodeProject.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 112751EA276CED910094FF22 /* Build configuration list for PBXNativeTarget "JWPBrandNewBitcodeProject" */;
 			buildPhases = (
+				E437ABE4E4118BC41432A441 /* [CP] Check Pods Manifest.lock */,
 				112751D2276CED8F0094FF22 /* Sources */,
 				112751D3276CED8F0094FF22 /* Frameworks */,
 				112751D4276CED8F0094FF22 /* Resources */,
+				F05E6D8B8F5AE463084E07F0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E437ABE4E4118BC41432A441 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JWPBrandNewBitcodeProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F05E6D8B8F5AE463084E07F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JWPBrandNewBitcodeProject/Pods-JWPBrandNewBitcodeProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JWPBrandNewBitcodeProject/Pods-JWPBrandNewBitcodeProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JWPBrandNewBitcodeProject/Pods-JWPBrandNewBitcodeProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		112751D2276CED8F0094FF22 /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		112751EB276CED910094FF22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEF33D0722F9DD840BCB5335 /* Pods-JWPBrandNewBitcodeProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		112751EC276CED910094FF22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97EF2942CB5BD928C5D1625F /* Pods-JWPBrandNewBitcodeProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
